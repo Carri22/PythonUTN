@@ -11,3 +11,6 @@
 # C) La cantidad de Heroinas que tienen habilidades de 'fuerza' o 'magia'.
 # D) El promedio de edad entre Heroinas.
 # E) El promedio de edad entre Heroes de fuerza.
+
+#este es un comentario de prueba
+
