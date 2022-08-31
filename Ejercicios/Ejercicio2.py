@@ -1,4 +1,5 @@
-# Ejercicio Integrador 02
+# CARRIZO LUCAS 1H
+# # Ejercicio Integrador 02
 
 # La división de alimentos está trabajando en un pequeño software para cargar las compras de ingredientes para la cocina de Industrias Wayne.
 # Realizar el algoritmo permita ingresar los datos de una compra de ingredientes para
@@ -22,7 +23,7 @@ peso_total = 0
 importe_todal_vuelta = 0
 alimento_caro = 0
 tipo_caro = ''
-promedio = 0
+promedio = 0.0
 mensaje = 'No le corresponte importe a pagar con descuento'
 
 while(respuesta == "si"):
@@ -32,7 +33,7 @@ while(respuesta == "si"):
         break
 
     presio_kilo = int(input("ingrese el precio por kilo "))
-    if presio_kilo >0:
+    if presio_kilo > 0:
         break
 
     tipo = input("ingrese tipo de alimento (v, a, m),(vegetal, animal, mezcla) ")
@@ -44,7 +45,7 @@ while(respuesta == "si"):
     importe_total += importe_todal_vuelta 
     peso_total += peso
 
-    if  alimento_caro < importe_todal_vuelta:
+    if alimento_caro < importe_todal_vuelta:
         alimento_caro = importe_todal_vuelta
         tipo_caro = tipo
 
