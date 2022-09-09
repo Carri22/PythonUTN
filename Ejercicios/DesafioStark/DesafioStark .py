@@ -1,16 +1,17 @@
 '''
-1)Analizar detenidamente el set de datos
-2)Recorrer la lista imprimiendo por consola el nombre de cada superhéroe
-3)Recorrer la lista imprimiendo por consola nombre de cada superhéroe junto a la altura del mismo
-4)Recorrer la lista y determinar cuál es el superhéroe más alto (MÁXIMO)
-5)Recorrer la lista y determinar cuál es el superhéroe más bajo (MÍNIMO)
-6)Recorrer la lista y determinar la altura promedio de los  superhéroes (PROMEDIO)
-7)Informar cual es el Nombre del superhéroe asociado a cada uno de los indicadores anteriores (MÁXIMO, MÍNIMO)
-8)Calcular e informar cual es el superhéroe más y menos pesado.
-9)Ordenar el código implementando una función para cada uno de los valores informados.
-Construir un menú que permita elegir qué dato obtener:
+consigna
+  1)Analizar detenidamente el set de datos
+  2)Recorrer la lista imprimiendo por consola el nombre de cada superhéroe
+  3)Recorrer la lista imprimiendo por consola nombre de cada superhéroe junto a la altura del mismo
+  4)Recorrer la lista y determinar cuál es el superhéroe más alto (MÁXIMO)
+  5)Recorrer la lista y determinar cuál es el superhéroe más bajo (MÍNIMO)
+  6)Recorrer la lista y determinar la altura promedio de los  superhéroes (PROMEDIO)
+  7)Informar cual es el Nombre del superhéroe asociado a cada uno de los indicadores anteriores (MÁXIMO, MÍNIMO)
+  8)Calcular e informar cual es el superhéroe más y menos pesado.
+  9)Ordenar el código implementando una función para cada uno de los valores informados.
+  Construir un menú que permita elegir qué dato obtener:
   
-  MENU
+MENU
   2)nombre de cada superhéroe
   3)nombre de cada superhéroe junto a la altura del mismo
   4)superhéroe más alto (MÁXIMO)
