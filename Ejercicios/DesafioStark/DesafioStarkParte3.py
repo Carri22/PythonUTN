@@ -19,7 +19,6 @@ CONSIGNA
     Con este se resuelve el Ej 1 del desafío #00
 
     Crear la función 'obtener_nombre_y_dato' la misma recibirá por parámetro un diccionario el cual representara a un héroe y una key (string) la cual representará el dato que se desea obtener. 
-
     La función deberá devolver un string el cual contenga el nombre y dato (key) del héroe a imprimir. El dato puede ser 'altura', 'fuerza', 'peso' O CUALQUIER OTRO DATO.
 
     El string resultante debe estar formateado de la siguiente manera: (suponiendo que la key es fuerza)
@@ -37,7 +36,6 @@ CONSIGNA
         calcular_min(lista, 'edad')
 
     Crear la funcion 'calcular_max_min_dato' la cual recibira tres parámetros:
-
     La lista de héroes
     El tipo de cálculo a realizar: es un valor string que puede tomar los valores ‘maximo’ o ‘minimo’
     Un string que representa la key del dato a calcular, por ejemplo: ‘altura’, ‘peso’, ‘edad’, etc.
@@ -46,7 +44,6 @@ CONSIGNA
     calcular_max_min_dato(lista, "maximo", "edad")
 
     Crear la función 'stark_calcular_imprimir_heroe' la cual recibirá tres parámetros: 
-
     La lista de héroes
     El tipo de cálculo a realizar: es un valor string que puede tomar los valores ‘maximo’ o ‘minimo’
     Un string que representa la key del dato a calcular, por ejemplo: ‘altura’, ‘peso’, ‘edad’, etc.
@@ -103,10 +100,9 @@ def stark_normalizar_datos(lista:list):
         heroe["fuerza"]=float(heroe["fuerza"])
         flag=True
     if flag==True:
-      mensaje=print("Datos normalizados")
+      mensaje="Datos normalizados"
   else:
-    mensaje=print("Error: no se ingreso una lista o esta lista de heroe esta vacia ")
-
+    mensaje="Error: no se ingreso una lista o esta lista de heroe esta vacia "
   return mensaje
 
 def obtener_nombre(heroe:dict):
@@ -159,6 +155,24 @@ def obtener_nombre_y_dato(heroe:dict, key:str):
       
     return imprimir_dato(nombre)   
 
+def stark_imprimir_nombres_alturas(heroe:dict):
+    obtener_nombre_y_dato(heroe, "altura")   
+    return obtener_nombre_y_dato  
+
+def calcular_max(lista:list, key:str):
+  stark_normalizar_datos(lista)
+  flag = True
+  for heroe in lista:
+    for dato in heroe:
+      if type(dato)==type(key) and dato==key:
+        if flag == True:
+          maximo = heroe[dato]
+          nombre=heroe["nombre"]
+          flag = False
+        elif maximo<=heroe[dato]:
+          maximo=heroe[dato]
+          nombre=heroe["nombre"]
+  return nombre
 
 while True:
   
@@ -166,11 +180,11 @@ while True:
   if respuesta == "2":
     stark_imprimir_nombres_heroes(lista_heroes)
   elif respuesta=="3":
-    obtener_nombre_y_dato(lista_heroes[0],"altura")
+    stark_imprimir_nombres_alturas(lista_heroes[0])
   elif respuesta=="4":
-    PuntoCuatro()
+    calcular_max(lista_heroes,"altura")
   elif respuesta=="5":
-    PuntoCinco()  
+    PuntoCinco() 
   elif respuesta=="6":
     PuntoSeis()
   elif respuesta=="7":
