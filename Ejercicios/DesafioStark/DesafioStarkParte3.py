@@ -182,7 +182,7 @@ while True:
   elif respuesta=="3":
     stark_imprimir_nombres_alturas(lista_heroes[0])
   elif respuesta=="4":
-    calcular_max(lista_heroes,"altura")
+    print(calcular_max(lista_heroes,"altura"))
   elif respuesta=="5":
     PuntoCinco() 
   elif respuesta=="6":
